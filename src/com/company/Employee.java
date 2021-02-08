@@ -8,15 +8,22 @@ public class Employee {
     private int ssn;
 
 
-    public Employee() {
-        this.empId = "identification";
-        this.name = "name";
-        this.salary = 1500;
-        this.ssn = 25252525;
+    public Employee(String empId, String name, int salary, int ssn) {
+        this.empId = empId;
+        this.name = name;
+        this.salary = salary;
+        this.ssn = ssn;
     }
+
 
     public String getName () {
         return name;
+    }
+    public int getSsn () {
+        return ssn;
+    }
+    public String getEmpId () {
+        return empId;
     }
     public void setName (String newName) {
         this.name = newName;
@@ -24,9 +31,15 @@ public class Employee {
     public int getSalary () {
         return salary;
     }
-    public void setSalary (int salary1) {
-        salary1 = (salary*5)/100;
-        this.salary = salary1;
+    public void setSalary (double percent) {
+        this.salary = this.salary + (int)(this.salary + percent);
+
+    }
+
+    public void display () {
+
+        System.out.println("The employee " + name + " have the next ID: " + empId +
+                ". He or she have this SSN: " + ssn + " and this salary: " + salary );
     }
 
 
