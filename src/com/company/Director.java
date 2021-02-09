@@ -13,9 +13,14 @@ public class Director extends Manager {
     }
 
     @Override
-    public void display() {
-        super.display();
-        System.out.println("Budget: " + this.pressupost_control);
+    public int grantStock () {
+        return 1000;
+    }
+
+    @Override
+    public String toString() {
+        super.toString();
+        return super.toString() + "Budget: " + this.pressupost_control;
     }
 
 }

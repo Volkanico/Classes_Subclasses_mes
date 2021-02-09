@@ -32,14 +32,14 @@ public class Employee {
         return salary;
     }
     public void setSalary (double percent) {
-        this.salary = this.salary + (int)(this.salary + percent);
-
+        this.salary = this.salary + (int) (this.salary + percent);
     }
-
-    public void display () {
-
-        System.out.println("The employee " + name + " have the next ID: " + empId +
-                ". He or she have this SSN: " + ssn + " and this salary: " + salary );
+    public int grantStock () {
+        return 10;
+    }
+    public String toString () {
+        return "The employee " + name + " have the next ID: " + empId +
+                ". He or she have this SSN: " + ssn + " and this salary: " + salary;
     }
 
 

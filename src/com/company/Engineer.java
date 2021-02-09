@@ -6,7 +6,8 @@ public class Engineer extends Employee {
         super(empId, name, salary, ssn);
     }
     @Override
-    public void display() {
-        super.display();
+    public String toString () {
+        super.toString();
+        return super.toString();
     }
 }
